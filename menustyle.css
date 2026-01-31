@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* If you add the local font file, put it at ../weapons/talina-demo/Talina DEMO.otf and uncomment this block:
+@font-face {
+    font-family: "Talina DEMO";
+    src: url("../weapons/talina-demo/Talina DEMO.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+body {
+    font-family: 'Montserrat', 'Talina DEMO', sans-serif;
+    background-color: orange;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menutable {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* stacks on small screens */
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.column1,
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 300px;
+    /* grow/shrink with a preferred width */
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    border: 3px solid black;
+    color: black;
+    background: yellow;
+    text-decoration: underline;
+    gap: 8px;
+}
+
+.btnm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
