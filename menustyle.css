@@ -47,7 +47,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 320px;
+    max-width:100 px;
+    box-sizing: border-box;
     padding: 12px;
     border: 3px solid black;
     color: black;
@@ -62,4 +63,5 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
+
 }
