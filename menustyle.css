@@ -8,7 +8,11 @@
     font-style: normal;
 }
 */
-
+@media (max-width: 600px) {
+    .menutable {
+        flex-direction: column;
+        align-items: center;
+    }
 body {
     font-family: 'Montserrat', 'Talina DEMO', sans-serif;
     background-color: orange;
@@ -17,6 +21,7 @@ body {
 #title {
     display: flex;
     justify-content: center;
+    font-size: clamp(1.8rem,6vw , 2.5rem)
 
 }
 
@@ -38,6 +43,8 @@ body {
     flex-direction: column;
     gap: 12px;
     flex: 1 1 300px;
+    width:100%;
+    align-items:center;
     /* grow/shrink with a preferred width */
 }
 
@@ -63,5 +70,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    flex-wrap: wrap;
 
 }
+
